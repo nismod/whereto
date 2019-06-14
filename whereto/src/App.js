@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router'
-import { HashRouter } from 'react-router-dom'
 
 const CARDS = [
   {
@@ -31,19 +29,12 @@ const CARDS = [
 
 function App() {
   return (
-    <HashRouter basename="/whereto">
-      <div className="app">
-        <header className="app-header">
-          <h1>↫ Where To?</h1>
-        </header>
-        <Switch>
-          <Route exact path="/">
-            <CardChooser cards={CARDS} />
-          </Route>
-          <Route component={Fallback}/>
-        </Switch>
-      </div>
-    </HashRouter>
+    <div className="app">
+      <header className="app-header">
+        <h1>↫ Where To?</h1>
+      </header>
+      <CardChooser cards={CARDS} />
+    </div>
   );
 }
 
@@ -90,10 +81,6 @@ function Card(props) {
       </p>
     </div>
   )
-}
-
-function Fallback() {
-  return null
 }
 
 export default App;
