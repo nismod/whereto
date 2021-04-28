@@ -1,3 +1,5 @@
+> Note: this hack day project is not maintained and will be archived
+
 # ↫ Where to?
 
 [DAFNI](https://www.dafni.ac.uk/) conference 2019 hack project: neighbourhood discovery
